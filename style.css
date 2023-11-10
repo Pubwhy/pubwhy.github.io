@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap');
+
+* {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  position: relative;
+  background: #000000;
+  background-image: url(icons/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
+div>nav {
+  width: 100%;
+}
+
+.desc {
+  color: #000000;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+}
+
+.head {
+  position: fixed;
+  width: 99.2%;
+  z-index: 2;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  height: auto;
+  margin-top: 10px;
+}
+
+p {
+  margin: 0%;
+  padding: 0%;
+}
+
+img {
+  padding: 5px;
+  display: block;
+  height: 40px;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+}
+
+a:visited {
+  color: #000000;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.desc span {
+  text-decoration: underline overline;
+  transition: 0.5s;
+}
+
+.home a::after,
+.about a::after,
+.service a::after,
+.contacts a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 85%;
+  height: 3px;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.home,
+.about,
+.service,
+.contacts {
+  display: inline-block;
+  position: absolute;
+  padding: 2.8px;
+  background-color: rgba(3, 16, 162, 1);
+  border: 5px outset rgba(255, 255, 255, 0.15);
+  color: #000000;
+  border-radius: 30px 15px 30px 15px;
+  transition: all 0.5s;
+}
+
+.home {
+  left: 55%;
+}
+
+.about {
+  left: 65%;
+}
+
+.service {
+  left: 75%;
+}
+
+.contacts {
+  left: 85%;
+}
+
+/*Hover effect*/
+.home a:hover::after,
+.about a:hover::after,
+.service a:hover::after,
+.contacts a:hover::after,
+.desc:hover {
+  padding: 2.8px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: inset 20px 24px 80px 0px rgba(255, 255, 255, 1);
+  backdrop-filter: blur(5px);
+  text-decoration: none;
+  transform: scale(1.15);
+  transition: all 0.5s;
+}
+
+.desc span:hover {
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+
+
+.details {
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(15px);
+  padding: 8px;
+  border: 5px outset rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 20%;
+  margin-top: 20%;
+  margin-bottom: 15%;
+  font-size: 20px;
+  font-weight: bold;
+  width: 60%;
+  text-align: left;
+  color: #ffff;
+}
+
+.details-2 {
+  margin-top: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+}
+
+.nickName {
+  color: rgba(138, 174, 250, 1);
+}
+
+.details a {
+  border: 5px solid #020202;
+  background: #ffffff;
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 15px;
+  text-align: justify;
+}
+
+.details a {
+  color: #000000;
+  transition: all 0.3s
+}
+
+.details a:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
+  color: #ffff;
+  background: #000000;
+}
+
+.picture {
+  display: flex;
+  margin-left: 13%;
+  width: 20%;
+}
+
+.profile {
+  height: 400px;
+  border-radius: 400px;
+  border: 10px outset rgba(0, 0, 0, 0.55);
+}
+
+.icon {
+  display: inline-block;
+}
+
+div .ref {
+  display: inline-block;
+  margin-left: auto;
+}
+
+.details-c {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.details .coms {
+  border: none;
+  background: none;
+  padding: 10px 18px;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ffffff;
+  display: inline-block;
+  margin: 30px 0;
+  text-align: justify;
+}
+
+.details .coms:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s;
+  color: #000000;
+  background: #ffffff;
+}
